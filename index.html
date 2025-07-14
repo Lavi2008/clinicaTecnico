@@ -1,61 +1,157 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-  <title>Document</title>
-  <link rel="stylesheet" href="./style.css">
-  </head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <title>CardioVittá</title>
+    <link rel="stylesheet" href="style.css">
+</head>
 <body>
-  <!-- BARRA DO TOPO -->
-  <ul class="nav justify-content-center">
-    <li class="nav-item">
-      <a class="nav-link" href="index.html">Home</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link active" href="index2.html">Sobre nós</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="index3.html">Cadastre-se conosco</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="#">Link</a>
-    </li>
-</ul>
 
-<!-- CARROSEL -->
-  <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-  <ol class="carousel-indicators">
-    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-  </ol>
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img class="d-block w-100" style="width: 200px; height: auto;" src="img/clinica-dermatologia-botox-preenchimento-Osasco-alphaville-4.png" alt="Primeiro Slide">
+    <!-- CABEÇALHO -->
+    <div id="cabecalho">
+        <img id="logo" src="img/logoSemFundo.png" alt="img">
+        <nav class="menu-principal">
+            <!-- CABEÇALHO BOOSTSTRAP -->
+            <!-- ESPECIALIDADE -->
+            <div class="dropdown show">
+                <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                | Especialidades
+                </a>
+            
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                <a class="dropdown-item" href="#">Endócrinologia</a>
+                <a class="dropdown-item" href="#">Ginecologia</a>
+                <a class="dropdown-item" href="#">Clínico geral</a>
+                <a class="dropdown-item" href="#">Nutrição</a>
+                </div>
+            </div>
+            <!-- SERVIÇOS -->
+            <div class="dropdown show">
+                <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                | Serviços
+                </a>
+            
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                <a class="dropdown-item" href="#">Exames Diagnósticos Cardíacos</a>
+                <a class="dropdown-item" href="#">Check-up Cardiológico</a>
+                <a class="dropdown-item" href="#">Acompanhamento Pós-Cirúrgico</a>
+                <a class="dropdown-item" href="#">Programas de Prevenção</a>
+                <a class="dropdown-item" href="#">Vacinação</a>
+                <a class="dropdown-item" href="#">Avaliação Pré-Operatória</a>
+                </div>
+            </div>
+            <!-- CONVÊNIOS -->
+            <div class="dropdown show">
+                <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                | Convênios
+                </a>
+            
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                <a class="dropdown-item" href="#">CAF</a>
+                <a class="dropdown-item" href="#">Unimed</a>
+                <a class="dropdown-item" href="#">Doctor Clin</a>
+                <a class="dropdown-item" href="#">Bradesco Saúde</a>
+                <a class="dropdown-item" href="#">Care Plus</a>
+                <a class="dropdown-item" href="#">Blue Saúde</a>
+                </div>
+            </div>
+            <!-- CONTATO -->
+            <div class="dropdown show">
+                <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                | Contato
+                </a>
+            
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                <a class="dropdown-item" href="tel:+5551993696904">Telefone: (51) 99369-6904</a>
+                <a class="dropdown-item" href="https://wa.me/+5551993696904">Whatsapp: (51) 99369-6904</a>
+                <a class="dropdown-item" href="https://www.google.com/maps/search/?api=1&query=Rua+123,+Bairro,+Cidade,+SP">Endereço: Rua 123, Bairro, cidade - SP</a>
+                <a class="dropdown-item" href="mailto:<malubd77@gmail.com>">E-mail: malubd77@gmail.com</a>
+                <a class="dropdown-item" href="#">Horários de atendimento: segunda a sexta-feira, <br>
+                    das 8h às 18h</a>
+                </div>
+            </div>
+        </nav>
     </div>
-    <div class="carousel-item">
-      <img class="d-block w-100" style="width: 200px; height: auto;" src="img/abrir-uma-clinica-medica-1170x700.png" alt="Segundo Slide">
-    </div>
-    <div class="carousel-item">
-      <img class="d-block w-100" style="width: 200px; height: auto;" src="img/download.jpg" alt="Terceiro Slide">
-    </div>
-  </div>
-  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="sr-only">Anterior</span>
-  </a>
-  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="sr-only">Próximo</span>
-  </a>
-</div>
-<button type="button" class="btn btn-outline-info" style="width: 100%;">Info</button>
 
+    <!-- CARROSSEL -->
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" style="margin-top: 100px;">
+        <ol class="carousel-indicators">
+          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img class="d-block w-100" style="width: 200px; height: auto;" src="./img/imagemClinicaDentro.jpg" alt="Primeiro Slide">
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" style="width: 200px; height: auto;" src="./img/imgAtendimentoVitta.jpg" alt="Segundo Slide">
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" style="width: 200px; height: auto;" src="./img/imgCorredorVitta.jpg" alt="Terceiro Slide">
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Anterior</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Próximo</span>
+        </a>
+      </div>
+
+<!-- BODY -->
+    <div id="parte-meio">
+        <h2>Bem-vindo à CardioVittá: Cuidando da Sua Saúde com Dedicação.</h2>
+        <h3>Na CardioVittá, acreditamos que sua saúde cardiovascular é seu bem mais precioso. 
+            Com uma equipe de especialistas dedicados e tecnologia de ponta, oferecemos um atendimento 
+            humanizado e completo para você e sua família. Nosso compromisso é com a prevenção, 
+            ]diagnóstico e tratamento de doenças cardíacas, garantindo que seu coração esteja sempre 
+            em boas mãos. Venha conhecer a CardioVittá e descubra o cuidado que você merece.</h3>
+            <center>
+            <img id="clinicaImg" src="img/clinicaImagem (1).jpg" alt="img" width="800px" height="auto">
+            </center>
+            <h2>Sobre a Clínica</h2>
+            <h3 class="mini-titulo">Nossa Missão</h3>
+                <h3>
+                    Oferecer excelência em cuidados cardiovasculares, promovendo a saúde e o bem-estar 
+                    de nossos pacientes através de um atendimento humanizado, tecnologia avançada e uma 
+                    equipe multidisciplinar altamente qualificada.
+                </h3>
+            <h3 class="mini-titulo">Nossa Visão</h3>
+                <h3>
+                    Ser referência em cardiologia, reconhecida pela inovação, qualidade de serviço e 
+                    compromisso contínuo com a vida, contribuindo para uma sociedade mais saudável e 
+                    consciente da importância da saúde do coração.
+                </h3>
+            <h3 class="mini-titulo">Nossos Valores</h3>
+                <h3>
+                    Humanização: Priorizar o respeito, a empatia e a individualidade de cada paciente. <br>
+                    Excelência: Buscar a melhoria contínua em todos os processos e serviços. <br>
+                    Integridade: Atuar com ética, transparência e responsabilidade em todas as relações. <br>
+                    Inovação: Investir em tecnologia e métodos avançados para diagnósticos e tratamentos. <br>
+                    Comprometimento: Dedicar-se integralmente à recuperação e qualidade de vida dos nossos pacientes.
+                </h3>
+            <h3 class="mini-titulo">Nossa História na CardioVittá</h3>
+                <h3>
+                    A CardioVittá nasceu de um sonho e da paixão pela cardiologia, fundada em 2025 pelas Doutoras Lavínia Orth 
+                    Figueiredo e Maria Luiza Bernardo Duarte. Desde o início, nosso 
+                    objetivo foi criar um espaço onde a alta tecnologia encontrasse o cuidado mais atencioso e 
+                    pessoal. Crescemos impulsionados pela dedicação em oferecer diagnósticos precisos e tratamentos 
+                    eficazes, tornando-nos um ponto de referência para a saúde cardiovascular na região. Ao longo
+                    dos anos, expandimos nossos serviços e modernizamos nossas instalações, sempre mantendo o foco 
+                    no bem-estar e na recuperação de cada coração que nos procura.
+                </h3>
+
+    </div>
 
 </body>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
 </html>
