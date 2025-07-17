@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <!-- CABEÇALHO -->
+  <div id="cabecalho">
+    <img id="logo" src="img/logoSemFundo.png" alt="img">
+    <nav class="menu_principal">
+        <!-- CABEÇALHO BOOSTSTRAP -->
+        <!-- ESPECIALIDADE -->
+        <div class="dropdown show">
+            <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            | Especialidades
+            </a>
+        
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+            <a class="dropdown-item" href="#">Endócrinologia</a>
+            <a class="dropdown-item" href="#">Ginecologia</a>
+            <a class="dropdown-item" href="#">Clínico geral</a>
+            <a class="dropdown-item" href="#">Nutrição</a>
+            </div>
+        </div>
+        <!-- SERVIÇOS -->
+        <div class="dropdown show">
+            <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            | Serviços
+            </a>
+        
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+            <a class="dropdown-item" href="#">Exames Diagnósticos Cardíacos</a>
+            <a class="dropdown-item" href="#">Check-up Cardiológico</a>
+            <a class="dropdown-item" href="#">Acompanhamento Pós-Cirúrgico</a>
+            <a class="dropdown-item" href="#">Programas de Prevenção</a>
+            <a class="dropdown-item" href="#">Vacinação</a>
+            <a class="dropdown-item" href="#">Avaliação Pré-Operatória</a>
+            </div>
+        </div>
+        <!-- CONVÊNIOS -->
+        <div class="dropdown show">
+            <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            | Convênios
+            </a>
+        
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+            <a class="dropdown-item" href="#">CAF</a>
+            <a class="dropdown-item" href="#">Unimed</a>
+            <a class="dropdown-item" href="#">Doctor Clin</a>
+            <a class="dropdown-item" href="#">Bradesco Saúde</a>
+            <a class="dropdown-item" href="#">Care Plus</a>
+            <a class="dropdown-item" href="#">Blue Saúde</a>
+            </div>
+        </div>
+        <!-- CONTATO -->
+        <div class="dropdown show">
+            <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            | Contato
+            </a>
+        
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+            <a class="dropdown-item" href="tel:+5551993696904">Telefone: (51) 99369-6904</a>
+            <a class="dropdown-item" href="https://wa.me/+5551993696904">Whatsapp: (51) 99369-6904</a>
+            <a class="dropdown-item" href="https://www.google.com/maps/search/?api=1&query=Rua+123,+Bairro,+Cidade,+SP">Endereço: Rua 123, Bairro, cidade - SP</a>
+            <a class="dropdown-item" href="mailto:<malubd77@gmail.com>">E-mail: malubd77@gmail.com</a>
+            <a class="dropdown-item" href="#">Horários de atendimento: segunda a sexta-feira, <br>
+                das 8h às 18h</a>
+            </div>
+        </div>
+    </nav>
+    <a href="./login.html">
+        <button type="button" id="btn-login" class="btn btn-primary"> <img id="img-login" src="./img/user.png" alt="img" width="20px" height="20px"> Login</button>
+    </a>
+  </div>
+
+  <h2>Formulário de Cadastro do Médico</h2>
+  <form action="processa_medico.php" method="POST">
+    <label for="codm">Código do Médico:</label><br>
+    <input type="number" id="codm" name="codm" required><br><br>
+
+    <label for="nome">Nome:</label><br>
+    <input type="text" id="nome" name="nome" maxlength="40" required><br><br>
+
+    <label for="idade">Idade:</label><br>
+    <input type="number" id="idade" name="idade" required><br><br>
+
+    <label for="especialidade">Especialidade:</label><br>
+    <input type="text" id="especialidade" name="especialidade" maxlength="20"><br><br>
+
+    <label for="CPF">CPF:</label><br>
+    <input type="text" id="CPF" name="CPF" pattern="\d{11}" maxlength="11" placeholder="Apenas números"><br><br>
+
+    <label for="cidade">Cidade:</label><br>
+    <input type="text" id="cidade" name="cidade" maxlength="30"><br><br>
+
+    <label for="nroa">Número do Ambulatório:</label><br>
+    <input type="number" id="nroa" name="nroa" required><br><br>
+
+    <input type="submit" value="Cadastrar Médico">
+  </form>
+    <br>
+  <a href="portal-cadastros.html">
+    <button type="button">Voltar ao Menu</button>
+  </a>
+  <footer>
+    <!-- RODAPÉ -->
+    
+    <div id="rodape">
+        <p id="texto-rodape">© 2025 CardioVittá - Todos os direitos reservados.</p>
+    </div>
+</footer>
+</body>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</html>

@@ -26,7 +26,6 @@
     background-color: rgb(26, 47, 87);
     border-color: rgb(26, 47, 87);
     color: #fff;
-    
 }
 #img-login{
     color: #fff;
@@ -70,7 +69,6 @@
 }
 .menu-principal ul li {
     position: relative; /* Importante para posicionar o submenu em relação ao item pai */
-    
 }
 
 .menu-principal ul li a {
@@ -148,9 +146,49 @@ h3{
     background-color: rgb(26, 47, 87);
     width: 100%;
     height: 300px;
-    margin-top: 50px;
+    margin-top: 140px;
     color: #fff;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+#quadrado-branco{
+    background-color: #ecedf6;
+    border-radius: 10px;    
+    width: 400px;
+    height: 440px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column; /*para ajeitar em colunas vulgo uma embaixo da outra*/
+
+}
+.menu_portal {
+    display: inline-block;
+    margin-top: 60px;
+    display: flex;
+    align-items: center;
+    flex-direction: column; /*para ajeitar em colunas vulgo uma embaixo da outra*/
+}
+#titulo-portal-cadastros{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+.menu_portal a {    
+    display: block;
+    font-family: Ubuntu, sans-serif;
+    background-color: rgb(26, 47, 87);
+    color: #fff;
+    text-decoration: none;
+    padding: 15px 25px;
+    margin: 10px;
+    border-radius: 8px;
+    font-size: 18px;
+    transition: background-color 0.3s;
+}
+
+.menu_portal a:hover {
+    background-color: #fff;
+    color: rgb(26, 47, 87);
+    border-color: rgb(26, 47, 87);
 }
